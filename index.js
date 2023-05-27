@@ -1,10 +1,7 @@
-import express from "express";
-import sanityClient from "@sanity/client";
-import nodemailer from "nodemailer";
-import { config as dotenvConfig } from 'dotenv';
-
-
-dotenvConfig();
+const express = require('express');
+const sanityClient = require('@sanity/client').default;
+const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
